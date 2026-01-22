@@ -1,0 +1,7 @@
+print("Ejemplo de informacion del usuario")
+print("Dame un numero:")
+N1 = input()
+print("Dame otro numero:")
+N2 = input()
+suma =  int(N1)+ int(N2)
+print("La suma es:", suma)
