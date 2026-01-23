@@ -12,7 +12,7 @@ elif (NUM_KMS > 900):
 elif (NUM_KMS < 101):
     print("PROVINCIAL", NUM_KMS) 
 
-SALARIO = int(HRS_SEMANALES * IMP_POR_HR)
+SALARIO = int(HRS_SEMANALES) * int(IMP_POR_HR)
 print("SALARIO", SALARIO)
 
 
