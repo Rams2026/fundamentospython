@@ -7,11 +7,10 @@ for i in range(10):
     #print("Posicion[" + str(i) + "]" + letra)
     total = int(texto[i]) * int(letra)
     print("total", total(i))
-
+isbn=0
 suma = 0
 for i in range(len(isbn)):
     caracter = isbn[i]
     numero = int(caracter)
     multi = numero * (i + 1)
     suma = suma + multi
-    
