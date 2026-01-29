@@ -10,7 +10,7 @@ def despedirse(nombre, dia):
 primerMetodo()
 primerMetodo()
 segundoMetodo()
-despedirse("alumno", "martes", nombre= dia=)
+despedirse("alumno", "martes", nombre, dia)
 
 
 
