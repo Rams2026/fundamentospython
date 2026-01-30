@@ -1,14 +1,17 @@
-num = int(input("Teclee una cifra: "))
-original = num
+cifraEnt = int(input("Teclee una cifra: "))
+
+Digitos = len(str(cifraEnt))
+
 sum = 0
-n = len(str(num))
+temp = cifraEnt
 
-while num > 0:
-    digit = num % 10
-    sum += digit ++ n
-    num //= 10
+while temp > 0:
+    digit = temp % 10
 
-if sum == original:
-    print(f"{original}")
+    sum += digit ** Digitos
+    temp //= 10
+
+if sum == cifraEnt:
+    print(f"{cifraEnt} es narcisista")
 else:
-    print(f"{original}")
+    print(f"{cifraEnt} no es narcisita")
