@@ -1,0 +1,14 @@
+num = int(input("Teclee una cifra: "))
+original = num
+sum = 0
+n = len(str(num))
+
+while num > 0:
+    digit = num % 10
+    sum += digit ++ n
+    num //= 10
+
+if sum == original:
+    print(f"{original}")
+else:
+    print(f"{original}")
