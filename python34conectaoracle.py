@@ -25,7 +25,12 @@ Una vez qye tenemos  el cursor, debemos leer los datos
 Tenemos un metodo llamado fetchone() que se mueve una fila
 cada vez que lo ejecutamos
 Nos devuelve la fila en que estamos posicionados"""
-row = cursor.fetchone() #primera fila
+
+"""Para comentar en bloque:
+   >> Comentar: Command /control + k + u
+   
+   """
+"""row = cursor.fetchone() #primera fila
 print("Fila: ", row)
 row = cursor.fetchone() #segunda fila
 print("Fila: ", row)
@@ -34,7 +39,17 @@ print("Fila: ", row)
 row = cursor.fetchone() #cuarta fila
 print("Fila: ", row)
 row = cursor.fetchone() #un none(null en BBDD)
-print("Fila: ", row)
+print("Fila: ", row). """
+
+#1) Recorrer el cursor con WHILE
+"""row = cursor.fetchone()
+while (row != None):
+    print("Leer filas...",row)
+    row = cursor.fetchone(). """
+
+for numero, nombre, localidad in cursor:
+    print(numero, nombre, localidad)
+    
 
 """ Siempre que finalicemos las acciones debemos liberar los recursos """
 cursor.close()
